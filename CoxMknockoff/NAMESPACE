@@ -1,0 +1,4 @@
+importFrom("stats", "BIC", "coef", "glm", "model.matrix")
+import(survival, MultiMed, knockoff, corpcor, ncvreg)
+export(sis_alpha, sis_beta, proportion, threshold, knockoff_surv)
+exportPattern("^[[:alpha:]]+")
