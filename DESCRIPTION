@@ -1,0 +1,12 @@
+Package: CoxMKF
+Type: Package
+Title: A Knockoff Filter for High-Dimensional Mediation Analysis with a Survival Outcome
+Version: 0.1.0
+Author: Peixin Tian, Minhao Yao
+Maintainer: Minhao Yao <mhyao@connect.hku.hk>
+Description: A knockoff filter  for high-dimensional mediation analysis with a survival outcome that can provide a guarantee of  false discovery rate control in finite sample settings.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Imports: knockoff, ncvreg, survival, corpcor
