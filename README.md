@@ -34,6 +34,6 @@ COV <- Z
 ```
 Then we apply `CoxMKF` to select the mediators:
 ```
-results <- CoxMKF(X, Y, M, COV, penalty = 'MCP', q2 = q, gamma = gamma, n_bootstraps = n_bootstraps)
+results <- CoxMKF(X, Y, M, COV, penalty = 'MCP')
 ```
 
