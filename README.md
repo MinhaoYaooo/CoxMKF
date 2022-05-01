@@ -1,6 +1,13 @@
 # CoxMKF
 `CoxMKF` is an R package to apply the aggregated knockoffs to high dimensional mediation analysis with a survival response.
 
+# Installation
+
+You can install the development version of `CoxMKF` from Github via the devtools package.
+```
+devtools::install_github("MinhaoYaooo/CoxMKF")
+```
+
 # Examples
 First, we generate the data:
 ```
