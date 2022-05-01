@@ -3,7 +3,7 @@
 
 # Installation
 
-You can install the development version of `CoxMKF` from Github via the devtools package.
+You can install the development version of `CoxMKF` from Github via the `devtools` package.
 ```
 devtools::install_github("MinhaoYaooo/CoxMKF")
 ```
