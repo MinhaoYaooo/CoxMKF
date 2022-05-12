@@ -20,11 +20,11 @@ screen_FDR <- function(X, M, COV, intercept=TRUE, fdr=0.2){
       MX <- data.frame(M = M[, j], X = X, COV = COV)
     }
     if(intercept){
-      fit <- stats::glm(M ~1+., data = MX)
+      fit <- stats::lm(M ~1+., data = MX)
       p_alpha[j] <- summary(fit)$coef[2,4]   #p-value for alpha
       coef_alpha[j] <- summary(fit)$coef[2,1]
     }else{
-      fit <- stats::glm(M ~0+., data = MX)
+      fit <- stats::lm(M ~0+., data = MX)
       p_alpha[j] <- summary(fit)$coef[1,4]   #p-value for alpha
       coef_alpha[j] <- summary(fit)$coef[1,1]
     }
