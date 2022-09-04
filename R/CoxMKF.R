@@ -49,7 +49,7 @@ screen_FDR <- function(X, M, COV, intercept=TRUE, fdr=0.2){
 #' @return A vector of mediator IDs selected by AKO.
 #' @export
 
-knockoff_surv <- function(X, Y, MS, COV, penalty=c('MCP','lasso','SCAD'),  q=0.1, gamma = 0.3, n_bootstraps = 25){
+knockoff_surv <- function(X, Y, MS, COV, penalty=c('MCP','lasso','SCAD'),  q=0.1, gamma = 0.05, n_bootstraps = 25){
 
   pS <- ncol(MS)
   pvals = matrix(0, pS, n_bootstraps)
@@ -120,8 +120,8 @@ knockoff_surv <- function(X, Y, MS, COV, penalty=c('MCP','lasso','SCAD'),  q=0.1
 #' @export
 
 
-CoxMKF <- function(X, Y, M, COV, penalty=c('MCP', 'lasso', 'SCAD'), intercept=TRUE, K=1, q1=0.2,
-                   q2=0.1, gamma = 0.3, n_bootstraps = 25){
+CoxMKF <- function(X, Y, M, COV, penalty=c('MCP', 'lasso', 'SCAD'), intercept=TRUE, q1=0.2,
+                   q2=0.1, gamma = 0.05, n_bootstraps = 25){
 
   n <- nrow(M); p <- ncol(M)
 
@@ -266,7 +266,7 @@ empirical_pval = function(test_score, offset = 1){
 }
 
 
-fixed_quantile_aggregation = function(pvals, gamma = 0.3){
+fixed_quantile_aggregation = function(pvals, gamma = 0.05){
   #   """Quantile aggregation function based on Meinshausen et al (2008)
   # Parameters
   # ----------
