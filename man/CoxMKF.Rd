@@ -11,7 +11,6 @@ CoxMKF(
   COV,
   penalty = c("MCP", "lasso", "SCAD"),
   intercept = TRUE,
-  K = 1,
   q1 = 0.2,
   q2 = 0.1,
   gamma = 0.3,
