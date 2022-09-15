@@ -1,5 +1,5 @@
 # CoxMKF
-`CoxMKF` is an R package to apply the aggregation of multiple knockoffs to high dimensional mediation analysis with a survival response.
+`CoxMKF` is an R package to apply the aggregation of multiple knockoffs to peform high dimensional mediation analysis with a survival response using Cox-proportional hazards model.
 
 # Installation
 
