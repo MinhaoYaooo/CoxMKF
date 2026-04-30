@@ -44,3 +44,6 @@ Then we apply `CoxMKF` to select the mediators:
 results <- CoxMKF(X, Y, M, COV, penalty = 'MCP')
 ```
 
+# Reference
+
+Tian, P., Yao, M., Huang, T., & Liu, Z. (2022). CoxMKF: a knockoff filter for high-dimensional mediation analysis with a survival outcome in epigenetic studies. Bioinformatics, 38(23), 5229-5235. [(https://academic.oup.com/bioinformatics/article/38/23/5229/6762861)](https://academic.oup.com/bioinformatics/article/38/23/5229/6762861)
